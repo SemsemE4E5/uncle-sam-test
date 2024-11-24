@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd frontend && npm run start",
+    "build": "npm run build",
+    "eject": "react-scripts eject"
   },
   "keywords": [],
   "author": "",
@@ -16,4 +19,5 @@
     "react-i18next": "^15.1.1",
     "redux": "^5.0.1"
   }
+  
 }
