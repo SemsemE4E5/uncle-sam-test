@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+.course-details-container {
+    max-width: 800px;
+    width: 100%;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-img {
+    filter: blur(5px);
+    transition: transform 0.5s ease-in-out;
+}
+
+.card-img-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+}
+
+.card-title {
+    font-size: 32px;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.enroll-course-btn {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.5s ease-in-out;
+}
+
+.enroll-course-btn:hover {
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+}
+
+.card-img:hover {
+    transform: scale(1.1);
+}
+
+.additional-info, .reviews {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.list-group-item {
+    border: none;
+}
+
+.review {
+    border-radius: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container course-details-container">
+        <div class="card bg-dark text-white">
+            <img src="../../../الصور/Saved Pictures/machinelarning.jpg" class="card-img" alt="Course Image">
+            <div class="card-img-overlay d-flex flex-column justify-content-end">
+                <h1 class="card-title">Course Title</h1>
+                <p class="card-text">Instructor: John Doe</p>
+                <p class="card-text">Duration: 10 hours</p>
+                <p class="card-text">Level: Beginner</p>
+                <p class="card-text">Price: $99</p>
+                <p class="card-text">This is a detailed description of the course. It includes all the information about what will be covered in the course, the learning outcomes, and any prerequisites.</p>
+                <button class="btn btn-primary enroll-course-btn">Enroll Now</button>
+            </div>
+        </div>
+        <div class="additional-info mt-4">
+            <h2>Course Content</h2>
+            <ul class="list-group">
+                <li class="list-group-item bg-dark text-white">Introduction</li>
+                <li class="list-group-item bg-dark text-white">Module 1: Basics</li>
+                <li class="list-group-item bg-dark text-white">Module 2: Intermediate</li>
+                <li class="list-group-item bg-dark text-white">Module 3: Advanced</li>
+                <li class="list-group-item bg-dark text-white">Conclusion</li>
+            </ul>
+        </div>
+        <div class="reviews mt-4">
+            <h2>Student Reviews</h2>
+            <div class="review bg-dark text-white p-3 mb-3">
+                <h5>Jane Smith</h5>
+                <p>This course was amazing! I learned so much and the instructor was great.</p>
+            </div>
+            <div class="review bg-dark text-white p-3 mb-3">
+                <h5>John Doe</h5>
+                <p>Very informative and well-structured. Highly recommend!</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
